@@ -36,3 +36,36 @@ h1 {
     padding: 0;
     border-width: 0;
 }
+
+#input-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.horizontal-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -13px;
+}
+
+input[type=range] {
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+label, p {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #b0b1b8;
+    font-family: Roboto, sans-serif;
+    padding: 5px;
+}

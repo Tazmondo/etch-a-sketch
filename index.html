@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <title>Etch-A-Sketch</title>
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <h1>Etch-A-Sketch</h1>
+<h1>Etch-A-Sketch</h1>
 
-    <div id="grid-container"></div>
-
-    <script src="script.js"></script>
+<div id="grid-container"></div>
+<div id="input-container">
+    <input id="reset-button" type="button" value="Reset">
+    <div class="vertical-flex">
+        <label for="pixel-range">Set the dimensions of the square</label>
+        <input id="pixel-range" max="100" min="1" type="range" value="10">
+        <div class="horizontal-flex">
+            <p>x1</p>
+            <p>x100</p>
+        </div>
+    </div>
+    <div class="vertical-flex">
+        Set the pen colour
+        <label>
+            <input id="rainbow-option" type="radio" name="color" checked>
+            Rainbow
+        </label>
+        <label>
+            <input id="white-option" type="radio" name="color">
+            White
+        </label>
+    </div>
+</div>
+<script src="script.js"></script>
 
 </body>
 </html>

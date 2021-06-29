@@ -6,11 +6,11 @@ let generateGrid = function (pixelCount) {
         newDiv.style.width = pixelLength + "px";
         newDiv.style.height = pixelLength + "px";
         newDiv.classList.toggle('pixel');
-        newDiv.addEventListener("mouseenter", (ev => {
+        newDiv.addEventListener("mouseenter", () => {
             newDiv.style.backgroundColor = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
-        }));
+        });
         gridContainer.appendChild(newDiv);
     }
 }
 
-generateGrid(15);
+generateGrid(100);

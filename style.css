@@ -1,0 +1,38 @@
+:root {
+--color1: #a2b9bc;
+--color2: #b2ad7f;
+--color3: #878f99;
+--color4: #6b5b95;
+}
+
+body {
+    background: linear-gradient(90deg, var(--color1) 0%, var(--color4) 100% );
+}
+
+h1 {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    font-family: Roboto, serif;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #b0b1b8;
+}
+
+#grid-container {
+    background-color: white;
+    border-color: #4e4e4e;
+    border-style: solid;
+    border-width: thick;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pixel {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}

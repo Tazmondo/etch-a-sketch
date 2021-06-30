@@ -1,11 +1,11 @@
-let getColorFromRadio = function () {
+function getColorFromRadio() {
     let rainbowButton = document.querySelector('#rainbow-option');
     let whiteButton = document.querySelector('#white-option');
     if (rainbowButton.checked) return `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
     else if (whiteButton.checked) return '#ffffff';
 }
 
-let generateGrid = function (pixelCount) {
+function generateGrid(pixelCount) {
     let gridContainer = document.querySelector('#grid-container');
     gridContainer.replaceChildren();
 
